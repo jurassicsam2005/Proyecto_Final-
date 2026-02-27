@@ -1,0 +1,99 @@
+header {
+    background-color: lightblue;
+    padding: 25px;
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    text-align: center;
+}
+footer {
+    background-color: lightblue;
+    padding: 25px;
+    text-align: center;
+}
+
+.caja_cliente { /*Este crea los bordes del contenedor donde está el formulario de inicio de sesion*/
+    width: 400px;
+    margin: 100px;
+    padding: 50px;
+    border: 5px solid rgb(33, 194, 33);
+    text-align: center;
+}
+
+.caja_vendedor {
+    width: 400px;
+    margin: 100px;
+    padding: 50px;
+    border: 5px solid orange;
+    text-align: center;
+}
+
+.btn-inicio-cliente {
+    display: inline-block;
+    background-color: rgb(29, 170, 29);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 185px;
+}
+
+.btn-inicio-cliente:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+}
+
+.btn-inicio-vendedor {
+    display: inline-block;
+    background-color: rgb(235, 153, 0);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 185px;
+}
+
+.btn-inicio-vendedor:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+}
+
+.descripciones-inicio {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.contenedor-descripciones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.tarjeta-descripcion {
+    background: rgb(187, 221, 227);
+    padding: 30px;
+    border-radius: 50px; /* bordes redondos*/
+    width: 250px; /*ancho*/
+    display: flex;
+    flex: 1;
+    min-width: 200px;
+    max-width: 320px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.tarjeta-descripcion:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+}
+
+.tarjeta-descripcion h3 {
+    margin-bottom: 15px;
+}
+
