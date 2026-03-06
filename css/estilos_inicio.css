@@ -63,6 +63,23 @@ footer {
     box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 }
 
+.btn-inicio-crear-cuenta {
+    display: inline-block;
+    background: linear-gradient(135deg, rgb(255, 190, 71), rgb(96, 228, 96));
+    color: black;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 185px;
+}
+
+.btn-inicio-crear-cuenta:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+}
+
 .descripciones-inicio {
     padding: 80px 60px;
     text-align: center;
@@ -95,5 +112,75 @@ footer {
 
 .tarjeta-descripcion h3 {
     margin-bottom: 15px;
+}
+
+.container {
+    margin-bottom: 15px;
+}
+
+.signup {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup-container {
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 50px; /* bordes redondos*/
+    width: 500px; /*ancho*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    border: 4px solid rgb(102, 189, 218);
+}
+
+.signup-header {
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.form-group input,
+.form-group select {
+    width: 400px;
+    height: 32px;
+    border-radius: 7px;
+    border: 2px solid rgb(204, 204, 204)
+}
+
+.form-check {
+    text-align: center;
+}
+
+.signup-form button {
+    display: block;
+    background-color: rgb(102, 189, 218);
+    color: black;
+    border: 2px solid rgb(102, 189, 218);
+    padding: 12px 25px;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 400px;
+}
+
+.signup-form button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 }
 
