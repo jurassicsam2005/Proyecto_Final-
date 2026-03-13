@@ -8,7 +8,7 @@ header {
 }
 
 footer {
-    background-color: rgb(118, 82, 15);
+    background-color: rgb(204, 133, 0);
     color: white;
     padding: 25px;
     text-align: center;
@@ -19,7 +19,7 @@ footer {
     justify-content: center;
     align-items: center;
     gap: 15px;
-    padding: 30px 0;
+    padding: 5px 0;
     /*navbar fijo*/
     position: fixed;
     top: 0;
@@ -42,4 +42,63 @@ footer {
     text-decoration: none;
     color: black;
     font-weight: bold;
+}
+
+.mi-tienda {
+  display: flex; 
+  align-items: center; 
+  gap: 20px; 
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.contenedor-imagen-tienda img {
+  width: 400px; 
+  height: auto;
+  border-radius: 5px;
+}
+
+.tabla-horarios {
+  width: 100%;
+  border-collapse: collapse; 
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.tabla-horarios th, 
+.tabla-horarios td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #eee; 
+}
+
+.tabla-horarios th {
+  color: #666;
+  text-transform: uppercase;
+}
+
+.contenedor-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.edit-btn {
+    align-self: flex-start;
+    background-color: rgb(235, 153, 0);
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: 2px solid rgb(212, 138, 0);
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    width: 185px;
+    margin-left: 90px;
+}
+
+.edit-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
 }

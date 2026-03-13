@@ -39,6 +39,7 @@ footer {
     font-weight: bold;
     transition: all 0.3s ease;
     width: 185px;
+    margin-right: 80px;
 }
 
 .btn-inicio-cliente:hover {
@@ -56,6 +57,7 @@ footer {
     font-weight: bold;
     transition: all 0.3s ease;
     width: 185px;
+    margin-left: 90px;
 }
 
 .btn-inicio-vendedor:hover {
