@@ -16,15 +16,47 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $rfc = $_POST["rfc"];
         $tipo_tienda = $_POST["tipo-tienda"];
 
+        $error = "";
 
-        //De momento solo muestra la alrerta, pero luego almacenará los datos
-        echo "<script>
-                    alert('Cuenta de vendedor creada con exito!');
+        //Validacion de los datos
+
+        //Verificacion de campos obligatrios
+        if (trim($nombre) === "" || trim($email) === "" || trim($password) === "" || trim($nombre_tienda) === "") {
+            $error = "Rellene todos los campos obligatorios";
+        } 
+
+        //Verificar el formato del correo
+        elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $error = "El formato del correo electrónico no es válido";
+        } 
+
+        //verificar contraseñas (longitud y que coincidan)
+        elseif (mb_strlen($password) < 8 || mb_strlen($password) > 16) {
+            $error = "La contraseña debe tener entre 8 y 16 caracteres.";
+        } 
+        // 4. Verificar que coincidan las contraseñas
+        elseif ($password !== $contrasena_ingresada) {
+            $error = "Las contraseñas no coinciden.";
+        }
+
+
+        if ($error === "") {
+            echo "<script>
+                    alert('¡Cuenta de vendedor creada con éxito!');
                     window.location.href = '../index.html';
                   </script>";
+            
+            //Si se llegara a usar base de dtos podriamos hacer el insert 
+            
+        } else {
+            echo "<script>
+                    alert('$error');
+                    window.history.back(); 
+                  </script>";
+        }
         
 
-    }
+        }
 }
 
 ?>
