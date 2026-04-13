@@ -76,8 +76,9 @@ $tienda = obtenerTienda();
                 </tr>
                 </tbody>
             </table>
-
-            <button type="button" class="edit-btn">Editar información</button>
+            <br>
+            <h3>Edición de información</h3>
+            <br>
 
             <form method="POST" action="/Proyecto_Final-/php/actualizar_datos_tienda.php">
                 <input type="text" name="ubicacion" placeholder="Nueva ubicación">
@@ -90,7 +91,7 @@ $tienda = obtenerTienda();
                 <input type="text" name="sabado" placeholder="Sábado">
                 <input type="text" name="domingo" placeholder="Domingo">
 
-                <button type="submit">Guardar</button>
+                <button type="submit" class="edit-btn">Editar información</button>
             </form>
 
         </div>

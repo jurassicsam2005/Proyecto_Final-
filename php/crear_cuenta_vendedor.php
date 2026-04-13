@@ -34,7 +34,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         elseif (mb_strlen($password) < 8 || mb_strlen($password) > 16) {
             $error = "La contraseña debe tener entre 8 y 16 caracteres.";
         } 
-        // 4. Verificar que coincidan las contraseñas
+        //Verificar que coincidan las contraseñas
         elseif ($password !== $contrasena_ingresada) {
             $error = "Las contraseñas no coinciden.";
         }
