@@ -1,3 +1,8 @@
+<?php
+include("php/funciones.php");
+$tienda = obtenerTienda();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,8 +37,7 @@
 
         <div class="contenedor-info">
             <h2 id="nombre-tienda">Papeleria "El Estudiante"</h2>
-            <p><strong>Ubicación:</strong> <span id="ubicacion-tienda">Av. Héroe de Nacozari No. 230, Col. Ampliación Leovigildo Gómez, C.P. 24079, San Francisco de Campeche, Campeche, México
-</span></p>
+            <p><strong>Ubicación:</strong><span id="ubicacion-tienda"><?php echo $tienda['ubicacion']; ?></span></p>
             <table class="tabla-horarios">
                 <thead>
                 <tr>
@@ -44,28 +48,51 @@
                 <tbody>
                 <tr>
                     <td>Lunes</td>
-                    <td id="hora-lunes">09:00 - 18:00</td>
+                    <td id="hora-lunes"><?php echo $tienda['lunes']; ?></td>
                 </tr>
                 <tr>
                     <td>Martes</td>
-                    <td id="hora-martes">09:00 - 18:00</td>
+                    <td id="hora-martes"><?php echo $tienda['martes']; ?></td>
                 </tr>
                 <tr>
                     <td>Miércoles</td>
-                    <td id="hora-miercoles">09:00 - 18:00</td>
+                    <td id="hora-miercoles"><?php echo $tienda['miercoles']; ?></td>
+                </tr>
+                <tr>
+                    <td>Jueves</td>
+                    <td id="hora-jueves"><?php echo $tienda['jueves']; ?></td>
+                </tr>
+                <tr>
+                    <td>Viernes</td>
+                    <td id="hora-viernes"><?php echo $tienda['viernes']; ?></td>
                 </tr>
                 <tr>
                     <td>Sábado</td>
-                    <td id="hora-sabado">10:00 - 14:00</td>
+                    <td id="hora-sabado"><?php echo $tienda['sabado']; ?></td>
                 </tr>
                 <tr>
                     <td>Domingo</td>
-                    <td id="hora-domingo">Cerrado</td>
+                    <td id="hora-domingo"><?php echo $tienda['domingo']; ?></td>
                 </tr>
                 </tbody>
             </table>
 
             <button type="button" class="edit-btn">Editar información</button>
+
+            <form method="POST" action="/Proyecto_Final-/php/actualizar_datos_tienda.php">
+                <input type="text" name="ubicacion" placeholder="Nueva ubicación">
+
+                <input type="text" name="lunes" placeholder="Lunes">
+                <input type="text" name="martes" placeholder="Martes">
+                <input type="text" name="miercoles" placeholder="Miércoles">
+                <input type="text" name="jueves" placeholder="Jueves">
+                <input type="text" name="viernes" placeholder="Viernes">
+                <input type="text" name="sabado" placeholder="Sábado">
+                <input type="text" name="domingo" placeholder="Domingo">
+
+                <button type="submit">Guardar</button>
+            </form>
+
         </div>
     </div>
     

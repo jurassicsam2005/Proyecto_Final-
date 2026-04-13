@@ -42,7 +42,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     window.location.href = '../index.html';
                   </script>";
             
-            //Si se llegara a usar base de dtos podriamos hacer el insert 
+            //Si se llegara a usar base de datos podriamos hacer el insert 
             
         } else {
             echo "<script>

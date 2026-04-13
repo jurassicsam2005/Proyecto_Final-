@@ -28,7 +28,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         } else if(($usuario_vendedor === $usuario_ingresado) && ($contrasena_ingresada === $contrasena_vendedor)){
             echo "<script>
                     alert('Se inicio sesion correctamente');
-                    window.location.href = '../vendedor_tienda.html';
+                    window.location.href = '../vendedor_tienda.php';
                   </script>";
             exit();
         } else{
