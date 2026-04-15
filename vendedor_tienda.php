@@ -21,7 +21,7 @@ $tienda = obtenerTienda();
             <ul class="nav-links">
                 <li> <a href="index.html"> Volver al inicio</a></li>
                 <li> <a href="#"> Mi Negocio</a></li>
-                <li> <a href="#"> Mis Productos</a></li>
+                <li> <a href="vendedor/vendedor_productos.php"> Mis Productos</a></li>
                 <li><a href="#"> Pedidos</a></li>
             </ul>
         </nav>

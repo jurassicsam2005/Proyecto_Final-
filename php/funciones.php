@@ -58,6 +58,63 @@ function actualizarTiendaJSON($ubicacion, $lunes, $martes, $miercoles, $jueves, 
     file_put_contents($ruta, $nuevoJson, LOCK_EX);
 }
 
+function obtenerProductos() {
+    $ruta = __DIR__ . "/../vendedor/productos.json";
 
+    if (!file_exists($ruta)) return [];
+
+    $json = file_get_contents($ruta);
+    $datos = json_decode($json, true);
+
+    return is_array($datos) ? $datos : [];
+}
+
+function guardarProductos($productos) {
+    $ruta = __DIR__ . "/../vendedor/productos.json";
+    $json = json_encode($productos, JSON_PRETTY_PRINT);
+    file_put_contents($ruta, $json, LOCK_EX);
+}
+
+function agregarProducto($nombre, $precio, $stock, $imagen) {
+    $productos = obtenerProductos();
+
+    $id = count($productos) > 0 ? max(array_column($productos, 'id')) + 1 : 1;
+
+    $productos[] = [
+        "id" => $id,
+        "nombre" => $nombre,
+        "precio" => $precio,
+        "stock" => $stock,
+        "imagen" => $imagen
+    ];
+
+    guardarProductos($productos);
+}
+
+function eliminarProducto($id) {
+    $productos = obtenerProductos();
+
+    $productos = array_filter($productos, function($p) use ($id) {
+        return $p['id'] != $id;
+    });
+
+    guardarProductos(array_values($productos));
+}
+
+function editarProducto($id, $nombre, $precio, $stock, $nombreImagen) {
+    $productos = obtenerProductos();
+
+    foreach ($productos as &$p) {
+    if ($p['id'] == $id) {
+
+        if (!empty($nombre)) $p['nombre'] = $nombre;
+        if ($precio !== "") $p['precio'] = $precio;
+        if ($stock !== "") $p['stock'] = $stock;
+        if (!empty($imagen)) {$p['imagen'] = $imagen;}
+    }
+}
+
+    guardarProductos($productos);
+}
 
 ?>

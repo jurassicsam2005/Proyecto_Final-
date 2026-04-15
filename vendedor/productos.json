@@ -1,0 +1,16 @@
+[
+    {
+        "id": 1,
+        "nombre": "Libreta",
+        "precio": "34",
+        "stock": "22",
+        "imagen": ""
+    },
+    {
+        "id": 2,
+        "nombre": "algo nuevo",
+        "precio": "12",
+        "stock": "3",
+        "imagen": "1776215389_20230220_105335.jpg"
+    }
+]
