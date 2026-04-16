@@ -24,7 +24,7 @@ if ($accion == "eliminar") {
 }
 
 if ($accion == "editar") {
-    editarProducto($_POST['id'], $_POST['nombre'], $_POST['precio'], $_POST['stock']);
+    editarProducto($_POST['id'], $_POST['nombre'], $_POST['precio'], $_POST['stock'], $nombreImagen);
 }
 
 header("Location: ../vendedor/vendedor_productos.php");

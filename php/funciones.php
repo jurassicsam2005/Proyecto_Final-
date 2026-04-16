@@ -110,9 +110,31 @@ function editarProducto($id, $nombre, $precio, $stock, $nombreImagen) {
         if (!empty($nombre)) $p['nombre'] = $nombre;
         if ($precio !== "") $p['precio'] = $precio;
         if ($stock !== "") $p['stock'] = $stock;
-        if (!empty($imagen)) {$p['imagen'] = $imagen;}
+        if (!empty($nombreImagen)) {$p['imagen'] = $nombreImagen;}
     }
 }
+
+    guardarProductos($productos);
+}
+
+function procesarCompra($carrito) {
+
+    $productos = obtenerProductos();
+
+    foreach ($carrito as $item) {
+        foreach ($productos as &$p) {
+            if ($p['id'] == $item['id']) {
+
+                //se resta el stock
+                $p['stock'] -= $item['cantidad'];
+
+                //evitar negativos
+                if ($p['stock'] < 0) {
+                    $p['stock'] = 0;
+                }
+            }
+        }
+    }
 
     guardarProductos($productos);
 }

@@ -22,7 +22,7 @@ $tienda = obtenerTienda();
                 <li> <a href="index.html"> Volver al inicio</a></li>
                 <li> <a href="#"> Mi Negocio</a></li>
                 <li> <a href="vendedor/vendedor_productos.php"> Mis Productos</a></li>
-                <li><a href="#"> Pedidos</a></li>
+                <li><a href="vendedor/vendedor_pedidos.html"> Pedidos</a></li>
             </ul>
         </nav>
     </header>
