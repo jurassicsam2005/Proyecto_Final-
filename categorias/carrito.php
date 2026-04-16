@@ -16,14 +16,14 @@
             <ul class="nav-links">
                 <li> <a href="../index.html"> Volver al inicio</a></li>
                 <li> <a href="../cliente_tiendas.html"> Tiendas</a></li>
-                <li> <a href="#"> Pedidos</a></li>
+                <li> <a href="pedidos.php"> Pedidos</a></li>
                 <li> <a href="#"> Carrito🛒</a></li>
             </ul>
         </nav>
     </header>
     <br>
     <br>
-    <h1>Productos</h1>
+    <h1>Tu Carrito 🛒</h1>
     <br>
     <div class="contenedor-categorias">
         <?php

@@ -137,6 +137,51 @@ function procesarCompra($carrito) {
     }
 
     guardarProductos($productos);
+    guardarPedido($carrito);
+}
+
+function guardarPedido($carrito) {
+
+    $ruta = __DIR__ . "/../pedidos/pedidos.json";
+
+    if (!file_exists($ruta)) {
+        file_put_contents($ruta, json_encode([]));
+    }
+
+    $json = file_get_contents($ruta);
+    $pedidos = json_decode($json, true);
+
+    $productos = obtenerProductos();
+
+    $nuevoPedido = [
+        "id" => count($pedidos) + 1,
+        "productos" => [],
+        "total" => 0,
+        "estado" => "vigente"
+    ];
+
+    foreach ($carrito as $item) {
+        foreach ($productos as $p) {
+            if ($p['id'] == $item['id']) {
+
+                $subtotal = $p['precio'] * $item['cantidad'];
+
+                $nuevoPedido["productos"][] = [
+                    "id" => $p['id'],
+                    "nombre" => $p['nombre'],
+                    "cantidad" => $item['cantidad'],
+                    "imagen" => $p['imagen'] 
+                ];
+
+                $nuevoPedido["total"] += $subtotal;
+            }
+        }
+    }
+
+    $pedidos[] = $nuevoPedido;
+
+    file_put_contents($ruta, json_encode($pedidos, JSON_PRETTY_PRINT));
 }
 
 ?>
+

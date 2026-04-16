@@ -1,0 +1,85 @@
+[
+    {
+        "id": 3,
+        "productos": [
+            {
+                "id": 1,
+                "nombre": "Tijeras",
+                "cantidad": "1",
+                "imagen": "1776287244_tijeras.webp"
+            },
+            {
+                "id": 3,
+                "nombre": "Lapiz",
+                "cantidad": "4",
+                "imagen": "1776287707_lapiz.webp"
+            }
+        ],
+        "total": 41,
+        "estado": "entregado"
+    },
+    {
+        "id": 2,
+        "productos": [
+            {
+                "id": 1,
+                "nombre": "Tijeras",
+                "cantidad": "1",
+                "imagen": "1776287244_tijeras.webp"
+            },
+            {
+                "id": 3,
+                "nombre": "Lapiz",
+                "cantidad": "4",
+                "imagen": "1776287707_lapiz.webp"
+            }
+        ],
+        "total": 41,
+        "estado": "entregado"
+    },
+    {
+        "id": 3,
+        "productos": [
+            {
+                "id": 2,
+                "nombre": "Mochila morada",
+                "cantidad": "1",
+                "imagen": "1776287469_mochila.webp"
+            },
+            {
+                "id": 3,
+                "nombre": "Lapiz",
+                "cantidad": "2",
+                "imagen": "1776287707_lapiz.webp"
+            }
+        ],
+        "total": 260,
+        "estado": "entregado"
+    },
+    {
+        "id": 4,
+        "productos": [
+            {
+                "id": 3,
+                "nombre": "Lapiz",
+                "cantidad": "8",
+                "imagen": "1776287707_lapiz.webp"
+            }
+        ],
+        "total": 40,
+        "estado": "entregado"
+    },
+    {
+        "id": 5,
+        "productos": [
+            {
+                "id": 1,
+                "nombre": "Tijeras",
+                "cantidad": "1",
+                "imagen": "1776287244_tijeras.webp"
+            }
+        ],
+        "total": 21,
+        "estado": "entregado"
+    }
+]

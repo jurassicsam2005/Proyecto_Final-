@@ -20,7 +20,7 @@ $productos = obtenerProductos();
             <ul class="nav-links">
                 <li> <a href="../index.html"> Volver al inicio</a></li>
                 <li> <a href="../cliente_tiendas.html"> Tiendas</a></li>
-                <li> <a href="#"> Pedidos</a></li>
+                <li> <a href="pedidos.php"> Pedidos</a></li>
                 <li> <a href="carrito.php"> Carrito🛒</a></li>
             </ul>
         </nav>

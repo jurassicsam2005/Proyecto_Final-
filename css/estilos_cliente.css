@@ -43,6 +43,11 @@ footer {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    transition: all 0.2s;
+}
+
+.nav-links a:hover {
+    color: white;
 }
 
 .contenedor-categorias {
@@ -146,20 +151,39 @@ footer {
 }
 
 .global-btn {
-    align-self: flex-start;
-    background-color: rgb(34, 174, 13);
+    background: linear-gradient(135deg, #0ece0a, #24aa03);
     color: white;
-    padding: 12px 25px;
-    text-decoration: none;
-    border: 2px solid rgb(19, 117, 12);
-    border-radius: 5px;
+    padding: 10px 10px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
     font-weight: bold;
-    transition: all 0.3s ease;
-    width: 185px;
-    margin-left: 90px;
+    cursor: pointer;
+    transition: all 0.3s;
 }
 
 .global-btn:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.2)
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.contenedor-pedidos {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.columna {
+    text-align: center;
+    width: 50%;
+    border: 4px solid rgb(19, 117, 12);
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #ccffbe;
+    margin-bottom: 15px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fbfff5;
 }

@@ -21,7 +21,7 @@ $productos = obtenerProductos();
                 <li> <a href="../index.html"> Volver al inicio</a></li>
                 <li> <a href="../vendedor_tienda.php"> Mi Negocio</a></li>
                 <li> <a href="#"> Mis Productos</a></li>
-                <li><a href="vendedor_pedidos.html"> Pedidos</a></li>
+                <li><a href="vendedor_pedidos.php"> Pedidos</a></li>
             </ul>
         </nav>
     </header>
@@ -62,7 +62,7 @@ $productos = obtenerProductos();
                     <!-- ELIMINAR -->
                     <form method="POST" action="../php/acciones_productos.php" style="display:inline;">
                         <input type="hidden" name="id" value="<?php echo $p['id']; ?>">
-                        <button name="accion" value="eliminar">Eliminar</button>
+                        <button name="accion" value="eliminar" class="global-btn">Eliminar</button>
                     </form>
 
                     <!-- EDITAR -->
@@ -72,7 +72,7 @@ $productos = obtenerProductos();
                         <input type="number" name="precio" placeholder="Precio">
                         <input type="number" name="stock" placeholder="Stock">
                         <input type="file" name="imagen">
-                        <button name="accion" value="editar">Editar</button>
+                        <button name="accion" value="editar" class="global-btn">Editar</button>
                     </form>
                 </td>
             </tr>
@@ -87,7 +87,7 @@ $productos = obtenerProductos();
         <input type="number" name="stock" placeholder="Stock">
         <input type="file" name="imagen">
 
-        <button type="submit" name="accion" value="agregar">Agregar</button>
+        <button type="submit" name="accion" value="agregar" class="global-btn">Agregar</button>
         </form>
 
     </div>
