@@ -81,5 +81,30 @@
         ],
         "total": 21,
         "estado": "entregado"
+    },
+    {
+        "id": 6,
+        "productos": [
+            {
+                "id": 1,
+                "nombre": "Tijeras",
+                "cantidad": "2",
+                "imagen": "1776287244_tijeras.webp"
+            },
+            {
+                "id": 2,
+                "nombre": "Mochila morada",
+                "cantidad": "1",
+                "imagen": "1776287469_mochila.webp"
+            },
+            {
+                "id": 3,
+                "nombre": "Lapiz",
+                "cantidad": "5",
+                "imagen": "1776287707_lapiz.webp"
+            }
+        ],
+        "total": 317,
+        "estado": "entregado"
     }
 ]
