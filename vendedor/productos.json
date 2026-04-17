@@ -3,21 +3,21 @@
         "id": 1,
         "nombre": "Tijeras",
         "precio": "19",
-        "stock": 21,
+        "stock": 19,
         "imagen": "1776287244_tijeras.webp"
     },
     {
         "id": 2,
         "nombre": "Mochila morada",
         "precio": "250",
-        "stock": 1,
+        "stock": 0,
         "imagen": "1776287469_mochila.webp"
     },
     {
         "id": 3,
         "nombre": "Lapiz",
         "precio": "5",
-        "stock": 28,
+        "stock": 24,
         "imagen": "1776287707_lapiz.webp"
     }
 ]
