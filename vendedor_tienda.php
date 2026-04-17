@@ -91,7 +91,7 @@ $tienda = obtenerTienda();
                 <input type="text" name="sabado" placeholder="Sábado">
                 <input type="text" name="domingo" placeholder="Domingo">
 
-                <button type="submit" class="edit-btn">Editar información</button>
+                <button type="submit" class="global-btn">Editar información</button>
             </form>
 
         </div>
