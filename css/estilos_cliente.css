@@ -187,3 +187,8 @@ body {
     font-family: Arial, sans-serif;
     background-color: #fbfff5;
 }
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
