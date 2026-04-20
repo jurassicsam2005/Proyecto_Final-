@@ -40,7 +40,7 @@
 
         <?php if (empty($carrito)): ?>
 
-            <p>Tu carrito está vacío 🛒</p>
+            <p>Tu carrito está vacio 🛒</p>
 
         <?php else: ?>
 

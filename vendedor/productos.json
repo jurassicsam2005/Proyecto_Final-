@@ -3,33 +3,33 @@
         "id": 1,
         "nombre": "Tijeras",
         "precio": "19",
-        "stock": 19,
+        "stock": "40",
         "imagen": "1776287244_tijeras.webp"
     },
     {
         "id": 2,
         "nombre": "Mochila morada",
         "precio": "250",
-        "stock": "5",
+        "stock": 3,
         "imagen": "1776287469_mochila.webp"
     },
     {
         "id": 3,
-        "nombre": "Lapiz",
+        "nombre": "L\u00e1piz",
         "precio": "5",
-        "stock": 24,
+        "stock": 22,
         "imagen": "1776287707_lapiz.webp"
     },
     {
         "id": 4,
         "nombre": "Mochila Azul",
         "precio": "220",
-        "stock": "3",
+        "stock": 2,
         "imagen": "1776440349_mochila_azul.webp"
     },
     {
         "id": 5,
-        "nombre": "Libreta Verde C7 ",
+        "nombre": "Libreta c7",
         "precio": "32",
         "stock": "25",
         "imagen": "1776440397_libreta_verde.webp"
@@ -45,21 +45,21 @@
         "id": 7,
         "nombre": "Estuchera Brainrot",
         "precio": "35",
-        "stock": "4",
+        "stock": 3,
         "imagen": "1776440484_lapicera_brain.webp"
     },
     {
         "id": 8,
         "nombre": "Regla Metal",
         "precio": "8",
-        "stock": "35",
+        "stock": 34,
         "imagen": "1776440505_regla_metal.jpg"
     },
     {
         "id": 9,
         "nombre": "Lapicero Azul",
         "precio": "9",
-        "stock": "58",
+        "stock": 56,
         "imagen": "1776440538_lapiceros.png"
     },
     {
@@ -75,5 +75,19 @@
         "precio": "320",
         "stock": "2",
         "imagen": "1776440607_mochila_roblox.webp"
+    },
+    {
+        "id": 12,
+        "nombre": "Mochila Minecraft",
+        "precio": "400",
+        "stock": "2",
+        "imagen": "1776445477_mochila_minecraft.webp"
+    },
+    {
+        "id": 13,
+        "nombre": "algo",
+        "precio": "6",
+        "stock": "3",
+        "imagen": ""
     }
 ]
