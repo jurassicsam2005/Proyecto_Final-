@@ -20,14 +20,14 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(($usuario_cliente === $usuario_ingresado) && ($contrasena_ingresada === $contrasena_cliente)){
             //header("Location: ../cliente_tiendas.html");
             echo "<script>
-                    alert('Se inicio sesion correctamente');
+                    alert('Se inició sesión correctamente');
                     window.location.href = '../cliente_tiendas.html';
                   </script>";
             
             exit();
         } else if(($usuario_vendedor === $usuario_ingresado) && ($contrasena_ingresada === $contrasena_vendedor)){
             echo "<script>
-                    alert('Se inicio sesion correctamente');
+                    alert('Se inició sesión correctamente');
                     window.location.href = '../vendedor_tienda.php';
                   </script>";
             exit();

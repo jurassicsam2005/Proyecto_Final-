@@ -9,7 +9,7 @@ $productos = obtenerProductos();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos_vendedor.css" />
     <link rel="icon" type="png" href="../imagenes/logo_chico.png">
-    <title>Vendedor | Mis Pedidos</title>
+    <title>Vendedor | Mis pedidos</title>
 </head>
 <body>
     <header>
@@ -19,8 +19,8 @@ $productos = obtenerProductos();
             </div>
             <ul class="nav-links">
                 <li> <a href="../index.html"> Volver al inicio</a></li>
-                <li> <a href="../vendedor_tienda.php"> Mi Negocio</a></li>
-                <li> <a href="vendedor_productos.php"> Mis Productos</a></li>
+                <li> <a href="../vendedor_tienda.php"> Mi negocio</a></li>
+                <li> <a href="vendedor_productos.php"> Mis productos</a></li>
                 <li><a href="vendedor_pedidos.php"> Pedidos</a></li>
             </ul>
         </nav>

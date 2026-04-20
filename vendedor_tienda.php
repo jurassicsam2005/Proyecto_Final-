@@ -10,7 +10,7 @@ $tienda = obtenerTienda();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos_vendedor.css" />
     <link rel="icon" type="png" href="imagenes\logo_chico.png">
-    <title>Vendedor | MI Tienda</title>
+    <title>Vendedor | Mi tienda</title>
 </head>
 <body>
     <header>
@@ -20,15 +20,15 @@ $tienda = obtenerTienda();
             </div>
             <ul class="nav-links">
                 <li> <a href="index.html"> Volver al inicio</a></li>
-                <li> <a href="#"> Mi Negocio</a></li>
-                <li> <a href="vendedor/vendedor_productos.php"> Mis Productos</a></li>
+                <li> <a href="#"> Mi negocio</a></li>
+                <li> <a href="vendedor/vendedor_productos.php"> Mis productos</a></li>
                 <li><a href="vendedor/vendedor_pedidos.php"> Pedidos</a></li>
             </ul>
         </nav>
     </header>
     <br>
     <br>
-    <h1>Mi Tienda</h1>
+    <h1>Mi tienda</h1>
     <br>
     <div class="mi-tienda">
         <div class="contenedor-imagen-tienda">
@@ -36,7 +36,7 @@ $tienda = obtenerTienda();
         </div>
 
         <div class="contenedor-info">
-            <h2 id="nombre-tienda">Papeleria "El Estudiante"</h2>
+            <h2 id="nombre-tienda">Papelería "El Estudiante"</h2>
             <p><strong>Ubicación:</strong><span id="ubicacion-tienda"><?php echo $tienda['ubicacion']; ?></span></p>
             <table class="tabla-horarios">
                 <thead>

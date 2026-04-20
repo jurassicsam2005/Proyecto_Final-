@@ -38,7 +38,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
         if ($error === "") {
             echo "<script>
-                    alert('¡Cuenta de vendedor creada con éxito!');
+                    alert('¡Cuenta de cliente creada con éxito!');
                     window.location.href = '../index.html';
                   </script>";
             
