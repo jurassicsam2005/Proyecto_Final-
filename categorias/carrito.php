@@ -57,16 +57,16 @@
                             <img src="../imagenes/<?php echo $p['imagen']; ?>" width="100">
 
                             <h3><?php echo $p['nombre']; ?></h3>
-                            <p>Precio: $<?php echo $p['precio']; ?></p>
+                            <p>Precio: $<?php echo number_format($p['precio'], 2); ?></p>
                             <p>Cantidad: <?php echo $item['cantidad']; ?></p>
-                            <p>Subtotal: $<?php echo $subtotal; ?></p>
+                            <p>Subtotal: $<?php echo number_format($subtotal, 2); ?></p>
                         </div>
 
                     <?php endif; ?>
                 <?php endforeach; ?>
             <?php endforeach; ?>
 
-            <h2>Total: $<?php echo $total; ?></h2>
+            <h2>Total: $<?php echo number_format($total, 2); ?></h2>
 
             <form method="POST" action="../php/pagar.php">
                 <button type="submit" class="global-btn">Pagar</button>
@@ -77,6 +77,6 @@
         </div>
 
     </div>
-    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> Política de privacidad | Términos y condiciones | Contacto</footer>
+    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> <a href="../politicas.html"> Política de privacidad</a> | <a href="../terminos.html"> Términos y condiciones</a> | <a href="../contacto.html"> Contacto</a></footer>
 </body>
 </html>

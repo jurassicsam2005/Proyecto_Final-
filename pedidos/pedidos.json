@@ -140,77 +140,22 @@
                 "nombre": "Tijeras",
                 "cantidad": "2",
                 "imagen": "1776287244_tijeras.webp"
-            },
-            {
-                "id": 2,
-                "nombre": "Mochila morada",
-                "cantidad": "1",
-                "imagen": "1776287469_mochila.webp"
-            },
-            {
-                "id": 3,
-                "nombre": "Lapiz",
-                "cantidad": "4",
-                "imagen": "1776287707_lapiz.webp"
             }
         ],
-        "total": 308,
-        "estado": "entregado"
+        "total": 38,
+        "estado": "vigente"
     },
     {
         "id": 9,
         "productos": [
             {
-                "id": 1,
-                "nombre": "Tijeras",
-                "cantidad": "5",
-                "imagen": "1776287244_tijeras.webp"
-            },
-            {
-                "id": 4,
-                "nombre": "Mochila Azul",
-                "cantidad": "1",
-                "imagen": "1776440349_mochila_azul.webp"
-            },
-            {
-                "id": 7,
-                "nombre": "Estuchera Brainrot",
-                "cantidad": "1",
-                "imagen": "1776440484_lapicera_brain.webp"
-            },
-            {
-                "id": 9,
-                "nombre": "Lapicero Azul",
-                "cantidad": "2",
-                "imagen": "1776440538_lapiceros.png"
-            }
-        ],
-        "total": 368,
-        "estado": "entregado"
-    },
-    {
-        "id": 10,
-        "productos": [
-            {
-                "id": 2,
-                "nombre": "Mochila morada",
-                "cantidad": "2",
-                "imagen": "1776287469_mochila.webp"
-            },
-            {
                 "id": 3,
-                "nombre": "L\u00e1piz",
-                "cantidad": "2",
+                "nombre": "Lapiz",
+                "cantidad": "3",
                 "imagen": "1776287707_lapiz.webp"
-            },
-            {
-                "id": 8,
-                "nombre": "Regla Metal",
-                "cantidad": "1",
-                "imagen": "1776440505_regla_metal.jpg"
             }
         ],
-        "total": 518,
-        "estado": "entregado"
+        "total": 15,
+        "estado": "vigente"
     }
 ]

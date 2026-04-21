@@ -9,7 +9,7 @@ $productos = obtenerProductos();
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/estilos_vendedor.css" />
     <link rel="icon" type="png" href="../imagenes/logo_chico.png">
-    <title>Vendedor | Mis Productos</title>
+    <title>Vendedor | Mis productos</title>
 </head>
 <body>
     <header>
@@ -19,8 +19,8 @@ $productos = obtenerProductos();
             </div>
             <ul class="nav-links">
                 <li> <a href="../index.html"> Volver al inicio</a></li>
-                <li> <a href="../vendedor_tienda.php"> Mi Negocio</a></li>
-                <li> <a href="#"> Mis Productos</a></li>
+                <li> <a href="../vendedor_tienda.php"> Mi negocio</a></li>
+                <li> <a href="#"> Mis productos</a></li>
                 <li><a href="vendedor_pedidos.php"> Pedidos</a></li>
             </ul>
         </nav>
@@ -55,17 +55,17 @@ $productos = obtenerProductos();
                     <?php endif; ?>
                 </td>
                 <td><?php echo $p['nombre']; ?></td>
-                <td><?php echo $p['precio']; ?></td>
+                <td><?php echo number_format($p['precio'], 2); ?></td>
                 <td><?php echo $p['stock']; ?></td>
 
                 <td>
-                    <!-- ELIMINAR -->
+                    <!-- eliminar -->
                     <form method="POST" action="../php/acciones_productos.php" style="display:inline;">
                         <input type="hidden" name="id" value="<?php echo $p['id']; ?>">
                         <button name="accion" value="eliminar" class="global-btn">Eliminar</button>
                     </form>
 
-                    <!-- EDITAR -->
+                    <!-- editar -->
                     <form method="POST" action="../php/acciones_productos.php" style="display:inline;" enctype="multipart/form-data">
                         <input type="hidden" name="id" value="<?php echo $p['id']; ?>">
                         <input type="text" name="nombre" placeholder="Nombre">
@@ -83,7 +83,7 @@ $productos = obtenerProductos();
 
         <form method="POST" action="../php/acciones_productos.php" enctype="multipart/form-data">
         <input type="text" name="nombre" placeholder="Nombre">
-        <input type="number" name="precio" placeholder="Precio">
+        <input type="number" name="precio" placeholder="Precio" step="0.01" min="0">
         <input type="number" name="stock" placeholder="Stock">
         <input type="file" name="imagen">
 
@@ -93,6 +93,6 @@ $productos = obtenerProductos();
     </div>
     
     <br>
-    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> Política de privacidad | Términos y condiciones | Contacto</footer>
+    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> <a href="../politicas.html"> Política de privacidad</a> | <a href="../terminos.html"> Términos y condiciones</a> | <a href="../contacto.html"> Contacto</a></footer>
 </body>
 </html>

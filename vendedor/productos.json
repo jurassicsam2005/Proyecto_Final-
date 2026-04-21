@@ -3,7 +3,7 @@
         "id": 1,
         "nombre": "Tijeras",
         "precio": "19",
-        "stock": "40",
+        "stock": 19,
         "imagen": "1776287244_tijeras.webp"
     },
     {
@@ -17,7 +17,7 @@
         "id": 3,
         "nombre": "L\u00e1piz",
         "precio": "5",
-        "stock": 22,
+        "stock": 25,
         "imagen": "1776287707_lapiz.webp"
     },
     {
