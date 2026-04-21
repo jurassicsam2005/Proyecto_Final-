@@ -55,7 +55,7 @@ $productos = obtenerProductos();
                     <?php endif; ?>
                 </td>
                 <td><?php echo $p['nombre']; ?></td>
-                <td><?php echo $p['precio']; ?></td>
+                <td><?php echo number_format($p['precio'], 2); ?></td>
                 <td><?php echo $p['stock']; ?></td>
 
                 <td>
@@ -83,7 +83,7 @@ $productos = obtenerProductos();
 
         <form method="POST" action="../php/acciones_productos.php" enctype="multipart/form-data">
         <input type="text" name="nombre" placeholder="Nombre">
-        <input type="number" name="precio" placeholder="Precio">
+        <input type="number" name="precio" placeholder="Precio" step="0.01" min="0">
         <input type="number" name="stock" placeholder="Stock">
         <input type="file" name="imagen">
 
@@ -93,6 +93,6 @@ $productos = obtenerProductos();
     </div>
     
     <br>
-    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> Política de privacidad | Términos y condiciones | Contacto</footer>
+    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> <a href="../politicas.html"> Política de privacidad</a> | <a href="../terminos.html"> Términos y condiciones</a> | <a href="../contacto.html"> Contacto</a></footer>
 </body>
 </html>

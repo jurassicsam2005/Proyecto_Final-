@@ -39,7 +39,7 @@ $productos = obtenerProductos();
 
             <h3><?php echo $p['nombre']; ?></h3>
             <img src="../imagenes/<?php echo $p['imagen']; ?>" width="120">
-            <p>Precio: $<?php echo $p['precio']; ?></p>
+            <p>Precio: $<?php echo number_format($p['precio'], 2); ?></p>
             <p>Stock: <?php echo $p['stock']; ?></p>
 
             <input type="hidden" name="id[]" value="<?php echo $p['id']; ?>">
@@ -56,6 +56,6 @@ $productos = obtenerProductos();
         </form>
 
     </div>
-    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> Política de privacidad | Términos y condiciones | Contacto</footer>
+    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> <a href="../politicas.html"> Política de privacidad</a> | <a href="../terminos.html"> Términos y condiciones</a> | <a href="../contacto.html"> Contacto</a></footer>
 </body>
 </html>

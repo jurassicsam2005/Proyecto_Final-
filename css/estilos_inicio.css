@@ -6,11 +6,23 @@ header {
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    margin: 0;
 }
 footer {
     background-color: lightblue;
     padding: 25px;
     text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    color: white;
 }
 
 .caja_cliente { /*Este crea los bordes del contenedor donde está el formulario de inicio de sesion*/
@@ -153,6 +165,13 @@ footer {
     display: block;
     text-align: left;
     margin-bottom: 0;
+}
+
+.form-group textarea {
+    width: 400px;
+    height: 70px;
+    border-radius: 7px;
+    border: 2px solid rgb(204, 204, 204)
 }
 
 .form-group input,

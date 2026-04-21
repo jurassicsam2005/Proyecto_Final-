@@ -2,10 +2,10 @@
 
 //predefinir usuario y contraseña
 $usuario_cliente = "adminc";
-$contrasena_cliente = "1234";
+$contrasena_cliente = "12345678";
 
 $usuario_vendedor = "adminv";
-$contrasena_vendedor = "1234";
+$contrasena_vendedor = "12345678";
 
 //verificamos que el formulario se mandó por metodo POST
 if($_SERVER["REQUEST_METHOD"] == "POST"){

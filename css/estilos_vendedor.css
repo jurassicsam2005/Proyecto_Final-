@@ -6,10 +6,22 @@ header {
 }
 
 footer {
-    background-color: rgb(204, 133, 0);
-    color: white;
+    background-color: rgb(254, 177, 32);
+    color: black;
     padding: 25px;
     text-align: center;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+
+footer a:hover {
+    color: white;
 }
 
 .navbar {
@@ -137,6 +149,7 @@ footer {
     display: flex;
     gap: 40px;
     align-items: flex-start;
+    margin: 14px;
 }
 
 .columna {
@@ -151,6 +164,7 @@ footer {
 body {
     font-family: Arial, sans-serif;
     background-color: #fffcf4;
+    margin: 0;
 }
 
 h1 {

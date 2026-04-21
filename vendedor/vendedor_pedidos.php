@@ -49,7 +49,7 @@ $productos = obtenerProductos();
                         <p><?php echo $prod['nombre']; ?> x <?php echo $prod['cantidad']; ?></p>
                     <?php endforeach; ?>
 
-                    <p>Total: $<?php echo $pedido['total']; ?></p>
+                    <p>Total: $<?php echo number_format($pedido['total'], 2); ?></p>
 
                     <form method="POST" action="../php/actualizar_pedido.php">
                     <input type="hidden" name="id" value="<?php echo $pedido['id']; ?>">
@@ -74,7 +74,7 @@ $productos = obtenerProductos();
                         <img src="../imagenes/<?php echo $prod['imagen']; ?>" width="80">
                         <p><?php echo $prod['nombre']; ?> x <?php echo $prod['cantidad']; ?></p>
                     <?php endforeach; ?>
-                    <p>Total: $<?php echo $pedido['total']; ?></p>
+                    <p>Total: $<?php echo number_format($pedido['total'], 2); ?></p>
                     <hr>
                 </div>
 
@@ -85,6 +85,6 @@ $productos = obtenerProductos();
     </div>
     
     <br>
-    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> Política de privacidad | Términos y condiciones | Contacto</footer>
+    <footer>© 2026 LocalComer - Todos los derechos reservados <br> Desarrollado por InnovaCode <br> <a href="politicas.html"> Política de privacidad</a> | <a href="terminos.html"> Términos y condiciones</a> | <a href="contacto.html"> Contacto</a></footer>
 </body>
 </html>

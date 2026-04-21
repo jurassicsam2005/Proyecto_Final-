@@ -131,5 +131,31 @@
         ],
         "total": 592,
         "estado": "entregado"
+    },
+    {
+        "id": 8,
+        "productos": [
+            {
+                "id": 1,
+                "nombre": "Tijeras",
+                "cantidad": "2",
+                "imagen": "1776287244_tijeras.webp"
+            }
+        ],
+        "total": 38,
+        "estado": "vigente"
+    },
+    {
+        "id": 9,
+        "productos": [
+            {
+                "id": 3,
+                "nombre": "Lapiz",
+                "cantidad": "3",
+                "imagen": "1776287707_lapiz.webp"
+            }
+        ],
+        "total": 15,
+        "estado": "vigente"
     }
 ]
